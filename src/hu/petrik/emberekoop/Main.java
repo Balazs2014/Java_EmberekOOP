@@ -14,7 +14,7 @@ public class Main {
         Emberek emberek = new Emberek(emberTomb);
         Emberek emberek2 = new Emberek("emberek.txt");
         System.out.println(emberek2);
-
+        System.out.println(emberek2.megszamolAdottHonapot2(3));
     }
 
     public static void emberOsztalyTesztje(Ember e0, Ember e1, Ember e2, Ember e3){

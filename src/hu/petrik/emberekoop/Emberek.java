@@ -40,6 +40,28 @@ public class Emberek {
         }
     }
 
+    public int megszamolAdottHonapot(int honapSorszama) {
+        int count = 0;
+        for (int i = 0; i < this.emberLista.size(); i++) {
+            if (this.emberLista.get(i).getSzuletesiHonap() == honapSorszama) {
+                count++;
+            }
+        }
+        
+        return count;
+    }
+
+    public int megszamolAdottHonapot2(int honapSorszama) {
+        int count = 0;
+        for (Ember item: emberLista) {
+            if (item.getSzuletesiHonap() == honapSorszama) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
     @Override
     public String toString() {
         String s = "";
